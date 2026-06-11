@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-hero-overlay" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[length:12.5vw_100%] opacity-35" />
 
-      <div className="relative z-10 flex min-h-[86vh] items-end">
+      <div className="relative z-10 flex min-h-[86vh] items-end pt-24 md:pt-28">
         <div className="page-container grid gap-10 pb-10 md:grid-cols-12 md:items-end md:pb-16">
           <div className="md:col-span-8">
             <motion.p

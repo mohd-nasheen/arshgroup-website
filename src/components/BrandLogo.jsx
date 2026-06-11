@@ -7,14 +7,14 @@ const SIZES = {
 export default function BrandLogo({ size = "md", className = "" }) {
   return (
     <div
-      className={`shrink-0 overflow-hidden rounded-full border border-[#b8976a]/40 bg-white shadow-[0_0_0_1px_rgba(184,151,106,0.12)] ${SIZES[size] || SIZES.md} ${className}`}
-    >
-      <img
-        src="/Arshgroup-logo.png"
-        alt="ArshGroup"
-        className="h-full w-full scale-[2.1] object-cover object-[center_38%]"
-        draggable={false}
-      />
-    </div>
+      role="img"
+      aria-label="ArshGroup"
+      className={`shrink-0 rounded-full border border-[#b8976a]/40 bg-white bg-no-repeat shadow-[0_0_0_1px_rgba(184,151,106,0.12)] ${SIZES[size] || SIZES.md} ${className}`}
+      style={{
+        backgroundImage: "url('/Arshgroup-logo.png')",
+        backgroundSize: "220%",
+        backgroundPosition: "center 38%",
+      }}
+    />
   );
 }
